@@ -1,23 +1,34 @@
-/* Homepage Ads */
-#main > div:has(.blocks-video) {
-	display:none!important;
-}
+/* ==UserStyle==
+@name			Wowhead
+@author			Terijaki
+@version		1.0.0
+@namespace		cascadea862310499
+@preprocessor	default
+==/UserStyle== */
 
-/* Force Full Width*/
-#main #main-contents {
-	width:100%;
-	padding:0;
-}
-.sidebar-wrapper {
-	display:none!important;
-}
-#page-content {
-	padding-right:0!important;
-}
-
-/* More Ads */
-.premium-promo-row, [data-notification-type="discord"]
+@-moz-document domain("wowhead.com")
 {
-	display:none!important
+	/* Homepage Ads */
+	#main > div:has(.blocks-video) {
+		display:none!important;
+	}
 	
-};
+	/* Force Full Width*/
+	#main #main-contents {
+		width:100%;
+		padding:0;
+	}
+	.sidebar-wrapper {
+		display:none!important;
+	}
+	#page-content {
+		padding-right:0!important;
+	}
+	
+	/* More Ads */
+	.premium-promo-row, [data-notification-type="discord"]
+	{
+		display:none!important
+		
+	};
+}
