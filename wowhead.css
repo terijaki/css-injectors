@@ -1,0 +1,23 @@
+/* Homepage Ads */
+#main > div:has(.blocks-video) {
+	display:none!important;
+}
+
+/* Force Full Width*/
+#main #main-contents {
+	width:100%;
+	padding:0;
+}
+.sidebar-wrapper {
+	display:none!important;
+}
+#page-content {
+	padding-right:0!important;
+}
+
+/* More Ads */
+.premium-promo-row, [data-notification-type="discord"]
+{
+	display:none!important
+	
+};
