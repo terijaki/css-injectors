@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name			Twitch
+@author			Terijaki
+@version		1.0.0
+@namespace		cascadea862310499
+@preprocessor	default
+==/UserStyle== */
+
+@-moz-document domain("twitch.tv")
+{
+	[aria-label="Get Ad-Free"],
+	[aria-label="Discover Luna"],
+	[aria-label="Get Bits"],
+	[aria-label="Close Threads"],
+	[data-test-selector="chat-room-component-layout"] div:has([aria-label="Toggle Leaderboard"])
+	{ display:none; }
+}
