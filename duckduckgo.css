@@ -1,0 +1,59 @@
+/* ==UserStyle==
+@name			DuckDuckGo
+@author			Terijaki
+@version		1.0.0
+@namespace		cleanup
+@preprocessor	default
+==/UserStyle== */
+
+@-moz-document domain("duckduckgo.com")
+{
+	/* remove ads */
+	li[data-layout="ad"]{
+		display:none!important;
+	}
+	/* removes the logo */
+	[data-testid="header-logo"], main div div img{
+		display:none!important;
+	}
+	/* remove self promotion */
+	p:has(a[href^="/spread"]),span[data-type="showcase"], [data-layout="spreadCTA"], *:has(> a[href^="#features"]), #features {
+		display:none!important;
+	}
+	/* remove feedback button */
+	div .js-feedback-btn-wrap, .feedback-prompt {
+		display: none!important;
+	}
+	/* recolor links */
+	li article[data-nrn="result"] h2 a {
+		color: rgb(255, 204, 51);
+	}
+	li article[data-nrn="result"] h2 a:visited {
+		color: rgb(75, 210, 196);
+	}
+	li:hover article[data-nrn="result"] h2 a {
+		color: rgb(235, 139, 32);
+		text-decoration: none!important;
+	}
+	/* round images in search */
+	#zci-images :has(img) {
+		border-radius: 8px!important;
+	}
+	
+	div.footer {
+		display:none!important;
+	}
+	
+	
+	
+	/* remove sidebar if its empty */
+	section[data-area="sidebar"]:empty {
+		display:none;
+	}
+	*:has(section[data-area="sidebar"]:empty) > section[data-area="mainline"] {
+		max-width: 100%!important;
+		flex-basis: 1200px!important;
+	}
+	
+	
+}
