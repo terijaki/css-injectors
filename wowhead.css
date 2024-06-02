@@ -26,9 +26,11 @@
 	}
 	
 	/* More Ads */
-	.premium-promo-row, [data-notification-type="discord"]
+	.premium-promo-row, [data-notification-type="discord"], #video-pos-body, .db-page-collection-tracker-cta
 	{
 		display:none!important
-		
-	};
+	}
+	[href="/premium"], [data-id="premium"] {
+		display:none!important;
+	}
 }
