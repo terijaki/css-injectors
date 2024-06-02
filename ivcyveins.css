@@ -1,0 +1,35 @@
+/* ==UserStyle==
+@name			Icy Veins
+@author			Terijaki
+@version		1.0.0
+@namespace		cleanup
+@preprocessor	default
+==/UserStyle== */
+
+@-moz-document domain("icy-veins.com")
+{
+	#adBanner {
+		display:none!important;
+	}
+	#premium_information,.premium_banners_limited, .premium_box {
+		display:none!important;
+	}
+	#user_bar {
+		display:none!important;
+	}
+	
+	
+	#header {
+		height:80px;
+		background-position-y: -46px;
+	}
+	#header > {
+		bottom:0;
+	}
+	#games, #games>div {
+		top:0;
+	}
+	#tagline {
+		top:50px ;
+	}
+}
