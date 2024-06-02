@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name			Maxroll
+@author			Terijaki
+@version		1.0.0
+@namespace		cleanup
+@preprocessor	default
+==/UserStyle== */
+
+@-moz-document domain("maxroll.gg")
+{
+	#le-post-video-ad {
+		display:none;
+	}
+}
