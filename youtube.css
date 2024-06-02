@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name			YouTube
+@author			Terijaki
+@version		1.0.0
+@namespace		cleanup
+@preprocessor	default
+==/UserStyle== */
+
+@-moz-document domain("youtube.com")
+{
+	#player-ads {
+		display:none;
+	}
+	#fulfilled-layout {
+		display: none;
+	}
+	yt-button-view-model:has([aria-label="Thanks"]){
+		display:none;
+	}
+	yt-button-view-model:has([aria-label="Clip"]){
+		display:none;
+	}
+	#sections > *:has([title="YouTube Premium"]){
+		display:none;
+	}
+	#sections > *:has([title="Trending"]){
+		display:none;
+	}
+	ytd-rich-item-renderer:has(ytd-ad-slot-renderer){
+		display: none;
+	}
+	
+}
